@@ -1,6 +1,6 @@
 ![Liberty Rider](https://github.com/liberty-rider/angel-ios/blob/integration/header.png?raw=true)
 
-CatsNdogs
+🐱 CatsNdogs 🐶
 =========================
 
 This is the main repository for the CatsNdogs, a CoreML iOS demo iOS app by Liberty Rider.
