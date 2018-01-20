@@ -1,6 +1,6 @@
 ![Liberty Rider](https://github.com/liberty-rider/angel-ios/blob/integration/header.png?raw=true)
 
-CatsNdogs
+🐱 CatsNdogs 🐶
 =========================
 
 This is the main repository for the CatsNdogs, a CoreML iOS demo iOS app by Liberty Rider.
@@ -18,8 +18,8 @@ At Liberty Rider we built a unique model processing accelerometer computed featu
 
 First of all, this project is just a demo demonstrating the workflow between a datascientist and a mobile developer. Its goal is to show the problematics between these two worlds. They both use different languages such as Python and Swift and different vocabulary and visions of coding, often creating misunderstanding between them. CoreML has been built to create an easy bridge between these worlds.
 
-Besides, in many cases, an embedded vision model is heavy and rarely matches the exact purpose of your app. For example, the provided VGG16 model weighs more than half a giga.  This demo app just wants to distinguich cats and dogs, that's it, no more details. So our datascientist created a lightweight model with a database of two thousand pics of dogs and cats.
-To reach at least a precision of 80%, it may need hours of training depending of your hardware configuration to compute the weights of our data model. But finally, the model is just 5MB!
+Besides, in many cases, an embedded vision model is heavy and rarely matches the exact purpose of your app. For example, the provided VGG16 model weighs more than half a giga.  This demo app just wants to distinguish cats and dogs, that's it, no more details. So our datascientist created a lightweight model with a database of two thousand pics of dogs and cats.
+To reach at least a reliability of 80%, it may need hours of training depending of your hardware configuration to compute the weights for the neural network of our data model. But finally, the trained model is just 5MB!
 
 
 ## Python project - create, train and export the model
