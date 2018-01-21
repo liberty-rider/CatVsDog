@@ -12,7 +12,7 @@ At Liberty Rider we built a unique model processing accelerometer computed featu
 
 **Deep learning** is a subcategory of machine learning (such as decision trees, for example), more and more used nowadays in our apps. It consists in multiple layers in an artificial neural network. We first have to process the raw data (for Liberty Rider, accelerometer data, in our demo app, images of dogs and cats) into features. Those features are the input of our network and the output will be the prediction (accident? or in our demo cat 🐱 VS dog 🐶)
  **CoreML** is a framework provided by Apple since iOS 11 to easily integrate trained models built with other languages such as Python in our app. you can integrate trained machine learning models into your app.
- According to Apple,  `Core ML delivers blazingly fast performance with easy integration of machine learning models enabling you to build apps with intelligent new features using just a few lines of code.``
+ According to Apple,  `Core ML delivers blazingly fast performance with easy integration of machine learning models enabling you to build apps with intelligent new features using just a few lines of code.`
 
 ## Good to know
 **Why don't use the [built-in vision API](https://developer.apple.com/documentation/vision) or a [provided embedded vision model](https://developer.apple.com/machine-learning/)?**
