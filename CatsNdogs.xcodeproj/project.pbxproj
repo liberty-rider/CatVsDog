@@ -10,7 +10,6 @@
 		ABFF64170C240AB7C78EE5EE /* Pods_CatsNdogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */; };
 		F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */; };
 		F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */; };
-		F655FF3F2013D15800C40A8A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FF3E2013D15800C40A8A /* CollectionViewCell.swift */; };
 		F655FF732013D24800C40A8A /* 48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF412013D24700C40A8A /* 48.jpg */; };
 		F655FF742013D24800C40A8A /* 49.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF422013D24700C40A8A /* 49.jpg */; };
 		F655FF752013D24800C40A8A /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF432013D24700C40A8A /* 8.jpg */; };
@@ -61,7 +60,10 @@
 		F655FFA22013D24800C40A8A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF702013D24700C40A8A /* 1.jpg */; };
 		F655FFA32013D24800C40A8A /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF712013D24700C40A8A /* 0.jpg */; };
 		F655FFA42013D24800C40A8A /* 46.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF722013D24700C40A8A /* 46.jpg */; };
-		F655FFA62013D58700C40A8A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFA52013D58700C40A8A /* NavigationController.swift */; };
+		F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFA72014C89600C40A8A /* Pulsator.swift */; };
+		F655FFAC2014CF6500C40A8A /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFAB2014CF6500C40A8A /* Predictor.swift */; };
+		F655FFB02014DF9600C40A8A /* CatOrDogNeuralNetwork.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */; };
+		F655FFB22014E01200C40A8A /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFB12014E01200C40A8A /* UIImage+CVPixelBuffer.swift */; };
 		F696F0B52003F4D000870F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B42003F4D000870F36 /* AppDelegate.swift */; };
 		F696F0B72003F4D000870F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B62003F4D000870F36 /* ViewController.swift */; };
 		F696F0BA2003F4D000870F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F696F0B82003F4D000870F36 /* Main.storyboard */; };
@@ -75,7 +77,6 @@
 		B637F9857BF82107A7386A5C /* Pods-CatsNdogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsNdogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs.release.xcconfig"; sourceTree = "<group>"; };
 		F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusImageView.swift; sourceTree = "<group>"; };
 		F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		F655FF3E2013D15800C40A8A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F655FF412013D24700C40A8A /* 48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 48.jpg; sourceTree = "<group>"; };
 		F655FF422013D24700C40A8A /* 49.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 49.jpg; sourceTree = "<group>"; };
 		F655FF432013D24700C40A8A /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
@@ -126,7 +127,10 @@
 		F655FF702013D24700C40A8A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F655FF712013D24700C40A8A /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		F655FF722013D24700C40A8A /* 46.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 46.jpg; sourceTree = "<group>"; };
-		F655FFA52013D58700C40A8A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		F655FFA72014C89600C40A8A /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		F655FFAB2014CF6500C40A8A /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatOrDogNeuralNetwork.mlmodel; sourceTree = "<group>"; };
+		F655FFB12014E01200C40A8A /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		F696F0B12003F4D000870F36 /* CatsNdogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsNdogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F696F0B42003F4D000870F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F696F0B62003F4D000870F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,8 +224,30 @@
 				F655FF722013D24700C40A8A /* 46.jpg */,
 			);
 			name = pictures;
-			path = data/pictures;
+			path = CatsNdogs/SupportingFiles/pictures;
 			sourceTree = SOURCE_ROOT;
+		};
+		F655FFA92014CE4A00C40A8A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */,
+				F655FFA72014C89600C40A8A /* Pulsator.swift */,
+				F655FFB12014E01200C40A8A /* UIImage+CVPixelBuffer.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F655FFAA2014CE6500C40A8A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F696F0B42003F4D000870F36 /* AppDelegate.swift */,
+				F696F0BD2003F4D000870F36 /* LaunchScreen.storyboard */,
+				F696F0C02003F4D000870F36 /* Info.plist */,
+				F696F0BB2003F4D000870F36 /* Assets.xcassets */,
+				F655FF402013D24700C40A8A /* pictures */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
 		};
 		F696F0A82003F4D000870F36 = {
 			isa = PBXGroup;
@@ -244,17 +270,13 @@
 		F696F0B32003F4D000870F36 /* CatsNdogs */ = {
 			isa = PBXGroup;
 			children = (
-				F696F0B42003F4D000870F36 /* AppDelegate.swift */,
-				F696F0B62003F4D000870F36 /* ViewController.swift */,
-				F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */,
+				F655FFAA2014CE6500C40A8A /* SupportingFiles */,
+				F655FFA92014CE4A00C40A8A /* Libs */,
 				F696F0B82003F4D000870F36 /* Main.storyboard */,
-				F696F0BB2003F4D000870F36 /* Assets.xcassets */,
-				F655FF402013D24700C40A8A /* pictures */,
-				F696F0BD2003F4D000870F36 /* LaunchScreen.storyboard */,
-				F696F0C02003F4D000870F36 /* Info.plist */,
+				F696F0B62003F4D000870F36 /* ViewController.swift */,
 				F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */,
-				F655FF3E2013D15800C40A8A /* CollectionViewCell.swift */,
-				F655FFA52013D58700C40A8A /* NavigationController.swift */,
+				F655FFAB2014CF6500C40A8A /* Predictor.swift */,
+				F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */,
 			);
 			path = CatsNdogs;
 			sourceTree = "<group>";
@@ -435,12 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F655FF3F2013D15800C40A8A /* CollectionViewCell.swift in Sources */,
-				F655FFA62013D58700C40A8A /* NavigationController.swift in Sources */,
+				F655FFB02014DF9600C40A8A /* CatOrDogNeuralNetwork.mlmodel in Sources */,
+				F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */,
 				F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */,
 				F696F0B72003F4D000870F36 /* ViewController.swift in Sources */,
 				F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */,
+				F655FFAC2014CF6500C40A8A /* Predictor.swift in Sources */,
 				F696F0B52003F4D000870F36 /* AppDelegate.swift in Sources */,
+				F655FFB22014E01200C40A8A /* UIImage+CVPixelBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNEA24X427;
-				INFOPLIST_FILE = CatsNdogs/Info.plist;
+				INFOPLIST_FILE = CatsNdogs/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liberty-rider.CatsNdogs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -596,7 +620,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNEA24X427;
-				INFOPLIST_FILE = CatsNdogs/Info.plist;
+				INFOPLIST_FILE = CatsNdogs/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liberty-rider.CatsNdogs";
 				PRODUCT_NAME = "$(TARGET_NAME)";

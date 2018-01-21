@@ -28,3 +28,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
 }
+
+class CollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var image: UIImageView!
+}
