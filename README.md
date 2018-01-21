@@ -9,7 +9,7 @@ Open the project with Xcode 9+
 ## Introduction
 At Liberty Rider we built a unique model processing accelerometer computed features and able to detect an accident.
 
-![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.jpeg?raw=true)
+![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.png?raw=true)
 
 **Deep learning** is a subcategory of machine learning (such as decision trees, for example), more and more used nowadays in our apps. It consists in multiple layers in an artificial neural network. We first have to process the raw data (for Liberty Rider, accelerometer data, in our demo app, images of dogs and cats) into features. Those features are the input of our network and the output will be the prediction (accident? or in our demo cat 🐱 VS dog 🐶)
  **CoreML** is a framework provided by Apple since iOS 11 to easily integrate trained models built with other languages such as Python in our app. you can integrate trained machine learning models into your app.
