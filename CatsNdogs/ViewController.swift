@@ -30,11 +30,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    // @IBOutlets
     @IBOutlet weak var predictionLabel: UILabel!
     @IBOutlet weak var reliabilityLabel: UILabel!
     @IBOutlet weak var imageView: CornerRadiusImageView!
     @IBOutlet weak var predictButton: UIButton!
     
+    
+    // App lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +53,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.pulsator.start()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.view.setNeedsLayout()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.pulsator.position = CGPoint(x: self.view.bounds.width / 2, y: self.predictButton.center.y)
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         self.pulsator.stop()
     }
@@ -59,11 +71,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         collectionVC.vc = self
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        self.pulsator.position = CGPoint(x: self.view.bounds.width / 2, y: self.predictButton.center.y)
-    }
-    
+    // @IBActions
     @IBAction func takePicture(_ sender: Any) {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else { return }
         self.imagePicker.sourceType = .camera
