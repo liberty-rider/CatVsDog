@@ -15,7 +15,7 @@ class Predictor {
         case cat = 0, dog
     }
     
-    private let model = CatAndDog()
+    private let model = CatVSDog()
     private let size = CGSize(width: 150, height: 150)
     
     func predict(image: UIImage) -> Species? {

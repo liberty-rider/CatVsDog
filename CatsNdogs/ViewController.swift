@@ -46,7 +46,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.imagePicker.allowsEditing = true
         self.imagePicker.delegate = self
         // Setup pulsator
-        self.pulsator.backgroundColor = UIColor(named: "myPurple")!.cgColor
+        self.pulsator.backgroundColor = #colorLiteral(red: 0.577162385, green: 0.241209209, blue: 0.7712444663, alpha: 1)
         self.pulsator.numPulse = 4
         self.pulsator.radius = 80
         self.pulsator.animationDuration = 3
