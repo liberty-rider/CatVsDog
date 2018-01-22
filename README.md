@@ -17,7 +17,7 @@ At Liberty Rider we built a unique model processing accelerometer computed featu
 ## Good to know
 **Why don't use the [built-in vision API](https://developer.apple.com/documentation/vision) or a [provided embedded vision model](https://developer.apple.com/machine-learning/)?**
 
-First of all, this project is just a demo demonstrating the workflow between a datascientist and a mobile developer. Its goal is to show the problematics between these two worlds. They both use different languages such as Python and Swift and different vocabulary and visions of coding, often creating misunderstanding between them. CoreML has been built to create an easy bridge between these worlds.
+First of all, this project is just a demo demonstrating the workflow between a datascientist and a mobile developer. Its goal is to point out the problematics between these two worlds. They both use different languages such as Python and Swift and different vocabulary and visions of coding, often creating misunderstanding between them. CoreML has been built to create an easy bridge between these worlds.
 
 Besides, in many cases, an embedded vision model is heavy and rarely matches the exact purpose of your app. For example, the provided VGG16 model weighs more than half a giga.  This demo app just wants to distinguish cats and dogs, that's it, no more details. So our datascientist created a lightweight model with a database of two thousand pics of dogs and cats.
 To reach at least a reliability of 80%, it may need hours of training depending of your hardware configuration to compute the weights for the neural network of our data model. But finally, the trained model is just 5MB!
