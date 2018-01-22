@@ -38,14 +38,12 @@ To reach at least a reliability of 80%, it may need hours of training depending 
 - the last stable version of [Xcode 9](https://developer.apple.com/xcode/)
 
 #### What you need to do:
- - ```cd ~ ; mkdir Developer ; cd Developer```
  - ```git clone https://github.com/liberty-rider/CatsNdogs.git```
  - ```cd CatsNdogs```
  - ```open CatsNdogs.xcodeproj/```
 ---
 
 #### Useful links
-
 - [Xcode 9+](https://developer.apple.com/xcode/)
 - [Swift 4](https://swift.org/blog/swift-4-0-released/)
 - [Cocoapods](https://cocoapods.org/)
