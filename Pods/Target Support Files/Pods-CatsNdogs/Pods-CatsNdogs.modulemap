@@ -1,6 +1,0 @@
-framework module Pods_CatsNdogs {
-  umbrella header "Pods-CatsNdogs-umbrella.h"
-
-  export *
-  module * { export * }
-}

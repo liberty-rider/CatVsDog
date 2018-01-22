@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABFF64170C240AB7C78EE5EE /* Pods_CatsNdogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */; };
 		F64F31B6201617930080FA1B /* CatAndDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F64F31B5201617930080FA1B /* CatAndDog.mlmodel */; };
 		F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */; };
 		F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */; };
@@ -72,9 +71,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9923D1108909B02721AAF3B0 /* Pods-CatsNdogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsNdogs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs.debug.xcconfig"; sourceTree = "<group>"; };
-		995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsNdogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B637F9857BF82107A7386A5C /* Pods-CatsNdogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsNdogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs.release.xcconfig"; sourceTree = "<group>"; };
 		F64F31B5201617930080FA1B /* CatAndDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatAndDog.mlmodel; sourceTree = "<group>"; };
 		F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusImageView.swift; sourceTree = "<group>"; };
 		F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -145,30 +141,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFF64170C240AB7C78EE5EE /* Pods_CatsNdogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F01E7363617849213EA41B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		889F3B1ADC6C20E606143A01 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9923D1108909B02721AAF3B0 /* Pods-CatsNdogs.debug.xcconfig */,
-				B637F9857BF82107A7386A5C /* Pods-CatsNdogs.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		F655FF402013D24700C40A8A /* pictures */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,8 +232,6 @@
 			children = (
 				F696F0B32003F4D000870F36 /* CatsNdogs */,
 				F696F0B22003F4D000870F36 /* Products */,
-				889F3B1ADC6C20E606143A01 /* Pods */,
-				7F01E7363617849213EA41B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,12 +264,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F696F0C32003F4D000870F36 /* Build configuration list for PBXNativeTarget "CatsNdogs" */;
 			buildPhases = (
-				42E9AE3BC9AE86B5BB3A1CA9 /* [CP] Check Pods Manifest.lock */,
 				F696F0AD2003F4D000870F36 /* Sources */,
 				F696F0AE2003F4D000870F36 /* Frameworks */,
 				F696F0AF2003F4D000870F36 /* Resources */,
-				0A7CAAC14B1F11D507F46C41 /* [CP] Embed Pods Frameworks */,
-				2405856895900601025ACF12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,57 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0A7CAAC14B1F11D507F46C41 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2405856895900601025ACF12 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42E9AE3BC9AE86B5BB3A1CA9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CatsNdogs-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F696F0AD2003F4D000870F36 /* Sources */ = {
@@ -599,7 +521,6 @@
 		};
 		F696F0C42003F4D000870F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9923D1108909B02721AAF3B0 /* Pods-CatsNdogs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,7 +536,6 @@
 		};
 		F696F0C52003F4D000870F36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B637F9857BF82107A7386A5C /* Pods-CatsNdogs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
