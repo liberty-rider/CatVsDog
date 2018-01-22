@@ -16,45 +16,46 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     private let imagePicker = UIImagePickerController()
     private var pulsator = Pulsator()
+    private let predictor = Predictor()
     
     private enum Prediction: String {
         case cat = "🐱 It's a cat!"
         case dog = "🐶 It's a dog!"
-        case unknown = "Press the paw to predict"
+        case start = "Press the paw to predict"
+        case unknown = "🐈 Sorry I couldn't guess...🐩"
     }
     
-    private var prediction: Prediction = .unknown {
+    private var prediction: Prediction = .start {
         didSet {
             self.predictionLabel.text = self.prediction.rawValue
-            self.reliabilityLabel.isHidden = self.prediction == .unknown
+            if self.prediction == .start {
+                self.pulsator.start()
+            }
         }
     }
     
     // @IBOutlets
     @IBOutlet weak var predictionLabel: UILabel!
-    @IBOutlet weak var reliabilityLabel: UILabel!
     @IBOutlet weak var imageView: CornerRadiusImageView!
     @IBOutlet weak var predictButton: UIButton!
-    
     
     // App lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.imageView.image = UIImage(named: "\(arc4random()%50).jpg")
         self.imagePicker.allowsEditing = true
         self.imagePicker.delegate = self
-        self.prediction = .unknown
         // Setup pulsator
         self.pulsator.backgroundColor = UIColor(named: "myPurple")!.cgColor
         self.pulsator.numPulse = 4
         self.pulsator.radius = 80
         self.pulsator.animationDuration = 3
         self.view.layer.insertSublayer(self.pulsator, below: self.predictButton.layer)
-        self.pulsator.start()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.view.setNeedsLayout()
+        self.prediction = .start
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,17 +63,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.pulsator.position = CGPoint(x: self.view.bounds.width / 2, y: self.predictButton.center.y)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        self.pulsator.stop()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.prediction = .start
         guard let collectionVC = segue.destination as? CollectionViewController else { return }
         collectionVC.vc = self
     }
     
     // @IBActions
     @IBAction func takePicture(_ sender: Any) {
+        self.prediction = .start
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else { return }
         self.imagePicker.sourceType = .camera
         self.imagePicker.cameraDevice = .rear
@@ -80,7 +79,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func predict(_ sender: Any) {
-        
+        self.pulsator.stop()
+        guard let image = self.imageView.image else { return }
+        let species = self.predictor.predict(image: image)
+        if let prediction = species {
+            self.prediction = (prediction == .cat) ? .cat : .dog
+        } else {
+            self.prediction = .unknown
+        }
     }
     
     // UIImagePickerControllerDelegate method

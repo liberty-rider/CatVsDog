@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ABFF64170C240AB7C78EE5EE /* Pods_CatsNdogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */; };
+		F64F31B6201617930080FA1B /* CatAndDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F64F31B5201617930080FA1B /* CatAndDog.mlmodel */; };
 		F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */; };
 		F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */; };
 		F655FF732013D24800C40A8A /* 48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF412013D24700C40A8A /* 48.jpg */; };
@@ -62,7 +63,6 @@
 		F655FFA42013D24800C40A8A /* 46.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF722013D24700C40A8A /* 46.jpg */; };
 		F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFA72014C89600C40A8A /* Pulsator.swift */; };
 		F655FFAC2014CF6500C40A8A /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFAB2014CF6500C40A8A /* Predictor.swift */; };
-		F655FFB02014DF9600C40A8A /* CatOrDogNeuralNetwork.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */; };
 		F655FFB22014E01200C40A8A /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFB12014E01200C40A8A /* UIImage+CVPixelBuffer.swift */; };
 		F696F0B52003F4D000870F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B42003F4D000870F36 /* AppDelegate.swift */; };
 		F696F0B72003F4D000870F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B62003F4D000870F36 /* ViewController.swift */; };
@@ -75,6 +75,7 @@
 		9923D1108909B02721AAF3B0 /* Pods-CatsNdogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsNdogs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs.debug.xcconfig"; sourceTree = "<group>"; };
 		995E0D02E70C01F0AC9C6C7F /* Pods_CatsNdogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsNdogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B637F9857BF82107A7386A5C /* Pods-CatsNdogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsNdogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatsNdogs/Pods-CatsNdogs.release.xcconfig"; sourceTree = "<group>"; };
+		F64F31B5201617930080FA1B /* CatAndDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatAndDog.mlmodel; sourceTree = "<group>"; };
 		F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusImageView.swift; sourceTree = "<group>"; };
 		F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F655FF412013D24700C40A8A /* 48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 48.jpg; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		F655FF722013D24700C40A8A /* 46.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 46.jpg; sourceTree = "<group>"; };
 		F655FFA72014C89600C40A8A /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
 		F655FFAB2014CF6500C40A8A /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
-		F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatOrDogNeuralNetwork.mlmodel; sourceTree = "<group>"; };
 		F655FFB12014E01200C40A8A /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		F696F0B12003F4D000870F36 /* CatsNdogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsNdogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F696F0B42003F4D000870F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -276,7 +276,7 @@
 				F696F0B62003F4D000870F36 /* ViewController.swift */,
 				F655FF3C2013CFE200C40A8A /* CollectionViewController.swift */,
 				F655FFAB2014CF6500C40A8A /* Predictor.swift */,
-				F655FFAF2014DF9500C40A8A /* CatOrDogNeuralNetwork.mlmodel */,
+				F64F31B5201617930080FA1B /* CatAndDog.mlmodel */,
 			);
 			path = CatsNdogs;
 			sourceTree = "<group>";
@@ -457,13 +457,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F655FFB02014DF9600C40A8A /* CatOrDogNeuralNetwork.mlmodel in Sources */,
 				F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */,
 				F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */,
 				F696F0B72003F4D000870F36 /* ViewController.swift in Sources */,
 				F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */,
 				F655FFAC2014CF6500C40A8A /* Predictor.swift in Sources */,
 				F696F0B52003F4D000870F36 /* AppDelegate.swift in Sources */,
+				F64F31B6201617930080FA1B /* CatAndDog.mlmodel in Sources */,
 				F655FFB22014E01200C40A8A /* UIImage+CVPixelBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
