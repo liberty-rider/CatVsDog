@@ -38,19 +38,10 @@ To reach at least a reliability of 80%, it may need hours of training depending 
 - the last stable version of [Xcode 9](https://developer.apple.com/xcode/)
 
 #### What you need to do:
-
-**1.** Clone the repository into your Developer folder
  - ```cd ~ ; mkdir Developer ; cd Developer```
- - ```git clone git@github.com:liberty-rider/angel-ios.git```
- - ```cd angel-ios```
-  
-**2.** Install cocoapods
-  - ```brew install cocoapods```
-  - ```pod install```
-
-**3.** Open the app in Xcode and run the app
- - ```open CatsNdogs.xcworkspace/```
- - *That's all folks*, run the app onto your phone or an iOS simulator!
+ - ```git clone https://github.com/liberty-rider/CatsNdogs.git```
+ - ```cd CatsNdogs```
+ - ```open CatsNdogs.xcodeproj/```
 ---
 
 #### Useful links
