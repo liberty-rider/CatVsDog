@@ -3,7 +3,7 @@
 🐱 CatVsDog 🐶
 =========================
 
-This is the main repository for the CatVsDog, a CoreML iOS demo iOS app by Liberty Rider.
+This is the main repository for the CatVsDog, a CoreML iOS demo app by Liberty Rider.
 Open the project with Xcode 9+
 ![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.png?raw=true)
 
