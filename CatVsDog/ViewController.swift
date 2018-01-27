@@ -89,6 +89,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    @IBAction func help(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://github.com/liberty-rider/CatVsDog")!)
+    }
+    
     // UIImagePickerControllerDelegate method
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let chosenImage = info[UIImagePickerControllerEditedImage] as! UIImage
