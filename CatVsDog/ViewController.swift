@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CatsNdogs
+//  CatVsDog
 //
 //  Created by Mathieu Vandeginste on 08/01/2018.
 //  Copyright © 2018 LibertyRider. All rights reserved.
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func help(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: "https://github.com/liberty-rider/CatVsDog")!)
+        UIApplication.shared.open(URL(string: "https://github.com/liberty-rider/CatVsDog")!, options: [:], completionHandler: nil)
     }
     
     // UIImagePickerControllerDelegate method

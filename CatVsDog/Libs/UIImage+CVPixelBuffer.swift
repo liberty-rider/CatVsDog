@@ -1,6 +1,6 @@
 //
 //  UIImage+CVPixelBuffer.swift
-//  CatsNdogs
+//  CatVsDog
 //
 //  Created by Mathieu Vandeginste on 21/01/2018.
 //  Copyright © 2018 LibertyRider. All rights reserved.
