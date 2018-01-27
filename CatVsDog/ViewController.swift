@@ -93,6 +93,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         UIApplication.shared.open(URL(string: "https://github.com/liberty-rider/CatVsDog")!, options: [:], completionHandler: nil)
     }
     
+    @IBAction func share(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.liberty-rider.com")!, options: [:], completionHandler: nil)
+    }
+    
     // UIImagePickerControllerDelegate method
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let chosenImage = info[UIImagePickerControllerEditedImage] as! UIImage

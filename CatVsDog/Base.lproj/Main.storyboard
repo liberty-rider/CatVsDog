@@ -123,6 +123,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="CatVsDog" id="adJ-n0-GaE">
                         <barButtonItem key="backBarButtonItem" title="Home" id="jJe-fe-aV9"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="NLg-xw-2wj">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="share:" destination="BYZ-38-t0r" id="yp9-e8-FXG"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="FOW-jd-CtK">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
