@@ -1,4 +1,4 @@
-![Liberty Rider](https://github.com/liberty-rider/angel-ios/blob/integration/header.png?raw=true)
+![Liberty Rider](https://github.com/liberty-rider/CatVsDog/blob/master/header.png?raw=true)
 
 🐱 CatVsDog 🐶
 =========================
