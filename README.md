@@ -31,9 +31,7 @@ This project has been presented at the Toulouse Swift Meetup the 06/02/2018. [Th
 ---
 
 #### Useful links
-- [Xcode 9+](https://developer.apple.com/xcode/)
-- [Swift 4](https://swift.org/blog/swift-4-0-released/)
-- [Cocoapods](https://cocoapods.org/)
+- [CoreML](https://developer.apple.com/documentation/coreml)
 - [FastAi](http://www.fast.ai/)
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 
