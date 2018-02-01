@@ -7,29 +7,16 @@ This is the main repository for the CatVsDog, a CoreML iOS demo app by Liberty R
 Open the project with Xcode 9+
 ![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.png?raw=true)
 
-## Introduction
-At Liberty Rider we built a unique model processing accelerometer computed features and able to detect an accident.
-
-**Deep learning** is a subcategory of machine learning (such as decision trees, for example), more and more used nowadays in our apps. It consists in multiple layers in an artificial neural network. We first have to process the raw data (for Liberty Rider, accelerometer data, in our demo app, images of dogs and cats) into features. Those features are the input of our network and the output will be the prediction (accident? or in our demo cat 🐱 VS dog 🐶)
- **CoreML** is a framework provided by Apple since iOS 11 to easily integrate trained models built with other languages such as Python in our app. you can integrate trained machine learning models into your app.
- According to Apple,  `Core ML delivers blazingly fast performance with easy integration of machine learning models enabling you to build apps with intelligent new features using just a few lines of code.`
-
-## Good to know
-**Why don't use the [built-in vision API](https://developer.apple.com/documentation/vision) or a [provided embedded vision model](https://developer.apple.com/machine-learning/)?**
-
-First of all, this project is just a demo demonstrating the workflow between a datascientist and a mobile developer. Its goal is to point out the problematics between these two worlds. They both use different languages such as Python and Swift and different vocabulary and visions of coding, often creating misunderstanding between them. CoreML has been built to create an easy bridge between these worlds.
-
-Besides, in many cases, an embedded vision model is heavy and rarely matches the exact purpose of your app. For example, the provided VGG16 model weighs more than half a giga.  This demo app just wants to distinguish cats and dogs, that's it, no more details. So our datascientist created a lightweight model with a database of two thousand pics of dogs and cats.
-To reach at least a reliability of 80%, it may need hours of training depending of your hardware configuration to compute the weights for the neural network of our data model. But finally, the trained model is just 5MB!
+This project has been presented at the Toulouse Swift Meetup the 06/02/2018. The slides of the presentation "slides.pdf" are in the repository.
 
 
 ## Python project - create, train and export the model
 
 #### Requirements:
-- a PC/Mac running Python
--
-
-#### What you need to do:
+- a PC/Mac running Python2.7 with Jupyter Notebook
+- install the requirements:  ```pip install -r requirements.txt```
+- launch the interactive python IDE: ```jupyter-notebook```
+- open and run the getting-started.ipynb notebook file
 
 ## iOS project - import the trained model and predict
 
@@ -47,3 +34,16 @@ To reach at least a reliability of 80%, it may need hours of training depending 
 - [Xcode 9+](https://developer.apple.com/xcode/)
 - [Swift 4](https://swift.org/blog/swift-4-0-released/)
 - [Cocoapods](https://cocoapods.org/)
+- [FastAi](http://www.fast.ai/)
+- [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+
+## Good to know
+ **CoreML** is a framework provided by Apple since iOS 11 to easily integrate trained models built with other languages such as Python in our app. you can integrate trained machine learning models into your app.
+ According to Apple,  `Core ML delivers blazingly fast performance with easy integration of machine learning models enabling you to build apps with intelligent new features using just a few lines of code.`
+
+**Why don't use the [built-in vision API](https://developer.apple.com/documentation/vision) or a [provided embedded vision model](https://developer.apple.com/machine-learning/)?**
+
+First of all, this project is just a demo demonstrating the workflow between a datascientist and a mobile developer. Its goal is to point out the problematics between these two worlds. They both use different languages such as Python and Swift and different vocabulary and visions of coding, often creating misunderstanding between them. CoreML has been built to create an easy bridge between these worlds.
+
+Besides, in many cases, an embedded vision model is heavy and rarely matches the exact purpose of your app. For example, the provided VGG16 model weighs more than half a giga.  This demo app just wants to distinguish cats and dogs, that's it, no more details. So our datascientist created a lightweight model with a database of two thousand pics of dogs and cats.
+To reach at least a reliability of 80%, it may need few minutes to hours of training depending of your hardware configuration  to train the network with our data. Finally, the trained model is just 5MB!
