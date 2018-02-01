@@ -89,12 +89,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    @IBAction func help(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "https://github.com/liberty-rider/CatVsDog")!, options: [:], completionHandler: nil)
-    }
-    
     @IBAction func share(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "https://www.liberty-rider.com")!, options: [:], completionHandler: nil)
+        let alert = UIAlertController(title: "Help", message: "Get help on Github or visit our website!", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Help on Github", style: .default, handler: { (action) in
+            UIApplication.shared.open(URL(string: "https://github.com/liberty-rider/CatVsDog")!, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Liberty Rider" , style: .default, handler: { (action) in
+            UIApplication.shared.open(URL(string: "https://www.liberty-rider.com")!, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
     
     // UIImagePickerControllerDelegate method
