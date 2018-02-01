@@ -7,7 +7,7 @@ This is the main repository for the CatVsDog, a CoreML iOS demo app by Liberty R
 Open the project with Xcode 9+
 ![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.png?raw=true)
 
-This project has been presented at the Toulouse Swift Meetup the 06/02/2018. The slides of the presentation "slides.pdf" are in the repository.
+This project has been presented at the Toulouse Swift Meetup the 06/02/2018. ![The slides of the presentation are in the repository.](https://github.com/liberty-rider/CatVsDog/blob/master/CoreML%20Meetup%20iOS%20by%20Liberty%20Rider.pdf)
 
 
 ## Python project - create, train and export the model
