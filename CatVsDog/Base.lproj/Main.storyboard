@@ -13,6 +13,7 @@
     <customFonts key="customFonts">
         <array key="GurmukhiMN.ttc">
             <string>GurmukhiMN</string>
+            <string>GurmukhiMN-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,10 +26,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQU-AE-dgV" customClass="CornerRadiusImageView" customModule="CatVsDog" customModuleProvider="target">
-                                <rect key="frame" x="16" y="72" width="288" height="287.5"/>
+                                <rect key="frame" x="32" y="72" width="256" height="255.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="obD-V2-x6L" customClass="CornerRadiusImageView" customModule="CatVsDog" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="8" width="272" height="271.5"/>
+                                        <rect key="frame" x="8" y="8" width="240" height="239.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="15"/>
@@ -59,7 +60,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐶 It's a dog! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="91c-B7-F5l">
-                                <rect key="frame" x="16" y="367.5" width="288" height="30"/>
+                                <rect key="frame" x="32" y="335.5" width="256" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2Yw-om-oK2"/>
                                 </constraints>
@@ -68,7 +69,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Fe-pc7" userLabel="predict">
-                                <rect key="frame" x="136.5" y="417.5" width="47" height="46.5"/>
+                                <rect key="frame" x="133.5" y="411.5" width="53" height="52.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ocr-Fe-pc7" secondAttribute="height" multiplier="1:1" id="hGp-lw-e8i"/>
@@ -103,21 +104,32 @@
                                     <segue destination="FWy-h6-zYd" kind="push" id="oaC-P1-tZG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-xy-xNw">
+                                <rect key="frame" x="130.5" y="373.5" width="60.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Kh-s0-o1h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="24"/>
+                                <color key="textColor" red="0.53614509109999997" green="0.26134413480000002" blue="0.74516409640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nKF-16-cVC" secondAttribute="trailing" constant="16" id="13R-22-dzi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cmR-Kk-Z1M" secondAttribute="bottom" constant="16" id="3WH-DW-ukJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KQU-AE-dgV" secondAttribute="trailing" constant="16" id="Aau-Ah-6qO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KQU-AE-dgV" secondAttribute="trailing" constant="32" id="Aau-Ah-6qO"/>
+                            <constraint firstItem="Ocr-Fe-pc7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Kwu-xy-xNw" secondAttribute="bottom" constant="8" id="Acn-Wi-RFC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ocr-Fe-pc7" secondAttribute="bottom" constant="16" id="Cun-HQ-0EU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nKF-16-cVC" secondAttribute="bottom" constant="16" id="E03-0R-45f"/>
                             <constraint firstItem="91c-B7-F5l" firstAttribute="top" secondItem="KQU-AE-dgV" secondAttribute="bottom" constant="8" id="asd-th-czK"/>
                             <constraint firstItem="KQU-AE-dgV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="eYu-f0-AbK"/>
-                            <constraint firstItem="KQU-AE-dgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iID-Aq-Tq9"/>
+                            <constraint firstItem="KQU-AE-dgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="iID-Aq-Tq9"/>
+                            <constraint firstItem="Kwu-xy-xNw" firstAttribute="top" secondItem="91c-B7-F5l" secondAttribute="bottom" constant="8" id="jHZ-Zq-vGp"/>
                             <constraint firstItem="cmR-Kk-Z1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mZR-Cf-6aK"/>
                             <constraint firstItem="91c-B7-F5l" firstAttribute="centerX" secondItem="KQU-AE-dgV" secondAttribute="centerX" id="nuv-GL-bSH"/>
-                            <constraint firstItem="Ocr-Fe-pc7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="91c-B7-F5l" secondAttribute="bottom" constant="20" id="pkx-Il-65o"/>
                             <constraint firstItem="Ocr-Fe-pc7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qKW-Ea-ai4"/>
+                            <constraint firstItem="Kwu-xy-xNw" firstAttribute="centerX" secondItem="91c-B7-F5l" secondAttribute="centerX" id="uUv-w4-xvT"/>
                             <constraint firstItem="91c-B7-F5l" firstAttribute="width" secondItem="KQU-AE-dgV" secondAttribute="width" id="x8V-51-Bzz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -133,6 +145,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="obD-V2-x6L" id="1ls-lT-JNv"/>
+                        <outlet property="percentLabel" destination="Kwu-xy-xNw" id="tHo-LE-7BK"/>
                         <outlet property="predictButton" destination="Ocr-Fe-pc7" id="8WL-5o-Xys"/>
                         <outlet property="predictionLabel" destination="91c-B7-F5l" id="x5m-gE-6Oc"/>
                     </connections>
@@ -190,7 +203,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mff-LX-q36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="148"/>
+            <point key="canvasLocation" x="830" y="148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UKW-E4-jv6">
@@ -213,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC3-1I-YHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="148"/>
+            <point key="canvasLocation" x="-200" y="148"/>
         </scene>
     </scenes>
     <resources>

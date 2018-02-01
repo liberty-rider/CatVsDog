@@ -12,30 +12,32 @@ class NavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
 }
 
+enum Prediction: String {
+    case cat = "🐱 It's a cat!"
+    case dog = "🐶 It's a dog!"
+    case start = "Press the paw to predict"
+    case unknown = "🐈 Sorry I couldn't guess...🐩"
+}
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     private let imagePicker = UIImagePickerController()
     private var pulsator = Pulsator()
     private let predictor = Predictor()
     
-    private enum Prediction: String {
-        case cat = "🐱 It's a cat!"
-        case dog = "🐶 It's a dog!"
-        case start = "Press the paw to predict"
-        case unknown = "🐈 Sorry I couldn't guess...🐩"
-    }
-    
     private var prediction: Prediction = .start {
         didSet {
             self.predictionLabel.text = self.prediction.rawValue
             if self.prediction == .start {
                 self.pulsator.start()
+                self.percentLabel.text = ""
             }
         }
     }
     
     // @IBOutlets
     @IBOutlet weak var predictionLabel: UILabel!
+    @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var imageView: CornerRadiusImageView!
     @IBOutlet weak var predictButton: UIButton!
     
@@ -81,16 +83,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func predict(_ sender: Any) {
         self.pulsator.stop()
         guard let image = self.imageView.image else { return }
-        let species = self.predictor.predict(image: image)
-        if let prediction = species {
-            self.prediction = (prediction == .cat) ? .cat : .dog
-        } else {
-            self.prediction = .unknown
-        }
+        let (prediction, percent) = self.predictor.predict(image: image)
+        self.predictionLabel.text = prediction.rawValue
+        self.percentLabel.text = "\(percent)%"
     }
     
     @IBAction func share(_ sender: Any) {
-        let alert = UIAlertController(title: "Help", message: "Get help on Github or visit our website!", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Help", message: "Read the code and know more about deep learning on Github or visit our website!", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Help on Github", style: .default, handler: { (action) in
             UIApplication.shared.open(URL(string: "https://github.com/liberty-rider/CatVsDog")!, options: [:], completionHandler: nil)
         }))
