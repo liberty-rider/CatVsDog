@@ -13,10 +13,10 @@ class NavigationController: UINavigationController {
 }
 
 enum Prediction: String {
-    case cat = "🐱 It's a cat!"
-    case dog = "🐶 It's a dog!"
+    case cat = "It's a cat!"
+    case dog = "It's a dog!"
     case start = "Press the paw to predict"
-    case unknown = "🐈 Sorry I couldn't guess...🐩"
+    case unknown = "Don't have a clue!"
 }
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
