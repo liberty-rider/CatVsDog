@@ -19,13 +19,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>CatsNdogs a besoin d&apos;utiliser l&apos;appareil photo.</string>
+	<string>CatsNdogs a besoin d'utiliser l'appareil photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>CatVsDog a besoin d&apos;accéder à votre bibliothèque photo.</string>
+	<string>CatVsDog a besoin d'accéder à votre bibliothèque photo.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
