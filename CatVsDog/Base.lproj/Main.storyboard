@@ -130,12 +130,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="CatVsDog" id="adJ-n0-GaE">
                         <barButtonItem key="backBarButtonItem" title="Home" id="jJe-fe-aV9"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="NLg-xw-2wj">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="share:" destination="BYZ-38-t0r" id="cNN-Bj-dB9"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -196,7 +190,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UKW-E4-jv6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6fu-1p-ztK" customClass="NavigationController" customModule="CatVsDog" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6fu-1p-ztK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HjE-Iu-ifr">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>

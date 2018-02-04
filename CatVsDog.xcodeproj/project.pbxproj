@@ -59,7 +59,6 @@
 		F655FFA22013D24800C40A8A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF702013D24700C40A8A /* 1.jpg */; };
 		F655FFA32013D24800C40A8A /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF712013D24700C40A8A /* 0.jpg */; };
 		F655FFA42013D24800C40A8A /* 46.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F655FF722013D24700C40A8A /* 46.jpg */; };
-		F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655FFA72014C89600C40A8A /* Pulsator.swift */; };
 		F696F0B52003F4D000870F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B42003F4D000870F36 /* AppDelegate.swift */; };
 		F696F0B72003F4D000870F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696F0B62003F4D000870F36 /* ViewController.swift */; };
 		F696F0BA2003F4D000870F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F696F0B82003F4D000870F36 /* Main.storyboard */; };
@@ -120,7 +119,6 @@
 		F655FF702013D24700C40A8A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F655FF712013D24700C40A8A /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		F655FF722013D24700C40A8A /* 46.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 46.jpg; sourceTree = "<group>"; };
-		F655FFA72014C89600C40A8A /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
 		F696F0B12003F4D000870F36 /* CatVsDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatVsDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F696F0B42003F4D000870F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F696F0B62003F4D000870F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				F655FE702013AB6400C40A8A /* CornerRadiusImageView.swift */,
-				F655FFA72014C89600C40A8A /* Pulsator.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -370,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F655FFA82014C89600C40A8A /* Pulsator.swift in Sources */,
 				F655FF3D2013CFE200C40A8A /* CollectionViewController.swift in Sources */,
 				F696F0B72003F4D000870F36 /* ViewController.swift in Sources */,
 				F655FE712013AB6400C40A8A /* CornerRadiusImageView.swift in Sources */,
