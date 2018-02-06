@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,17 +21,17 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KeI-IX-7Kx">
-                                <rect key="frame" x="0.0" y="150" width="600" height="320"/>
+                                <rect key="frame" x="0.0" y="164.5" width="320" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KeI-IX-7Kx" secondAttribute="height" multiplier="15:8" id="2JM-J0-luX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CatVsDog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Y5-gc-Gds">
-                                <rect key="frame" x="10" y="30" width="580" height="50"/>
+                                <rect key="frame" x="10" y="104.5" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="P3T-tE-ccS"/>
                                 </constraints>
@@ -36,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A CoreML demo app by Liberty Rider " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WSI-Wi-cTd">
-                                <rect key="frame" x="10" y="530" width="580" height="50"/>
+                                <rect key="frame" x="10" y="414" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pb6-Od-2aB"/>
                                 </constraints>
@@ -44,16 +48,37 @@
                                 <color key="textColor" red="0.53614509109999997" green="0.26134413480000002" blue="0.74516409640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meetup" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-GB-xJa">
+                                <rect key="frame" x="16" y="36" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="era-GI-CNK"/>
+                                    <constraint firstAttribute="height" constant="50" id="fZk-nx-f9y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toulouse Swift Meetup #5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x2z-g6-Q4g">
+                                <rect key="frame" x="74" y="36" width="238" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cB2-AY-jkh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="15"/>
+                                <color key="textColor" red="0.73914444446563721" green="0.34656158089637756" blue="0.1920032799243927" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WSI-Wi-cTd" secondAttribute="bottom" constant="16" id="0Kp-1e-uji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2z-g6-Q4g" secondAttribute="trailing" constant="8" id="9Gh-Qh-p9g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KeI-IX-7Kx" secondAttribute="trailing" id="AJ6-Ee-9aq"/>
                             <constraint firstItem="WSI-Wi-cTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Bv7-bZ-lZI"/>
+                            <constraint firstItem="fzt-GB-xJa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GJv-M1-BHx"/>
+                            <constraint firstItem="x2z-g6-Q4g" firstAttribute="centerY" secondItem="fzt-GB-xJa" secondAttribute="centerY" id="Gu1-Oa-VKN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Y5-gc-Gds" secondAttribute="trailing" constant="10" id="R3A-Qs-CBg"/>
+                            <constraint firstItem="x2z-g6-Q4g" firstAttribute="leading" secondItem="fzt-GB-xJa" secondAttribute="trailing" constant="8" id="SUP-Rk-aA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WSI-Wi-cTd" secondAttribute="trailing" constant="10" id="WmO-DG-FEn"/>
+                            <constraint firstItem="KeI-IX-7Kx" firstAttribute="top" secondItem="6Y5-gc-Gds" secondAttribute="bottom" constant="10" id="eI6-0e-ixa"/>
                             <constraint firstItem="KeI-IX-7Kx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kr4-Yp-ZL2"/>
-                            <constraint firstItem="6Y5-gc-Gds" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="nhf-Ib-hIL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WSI-Wi-cTd" secondAttribute="bottom" constant="20" id="uGm-cd-hUr"/>
+                            <constraint firstItem="fzt-GB-xJa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="nBv-s4-H0V"/>
                             <constraint firstItem="6Y5-gc-Gds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xUF-TQ-NNr"/>
                             <constraint firstItem="KeI-IX-7Kx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zba-n7-QUU"/>
                         </constraints>
@@ -62,10 +87,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo" width="384" height="384"/>
+        <image name="meetup" width="300" height="300"/>
     </resources>
 </document>
