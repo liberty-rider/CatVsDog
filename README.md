@@ -8,6 +8,7 @@ Open the project with Xcode 9+
 ![Screenshot](https://github.com/liberty-rider/CatsNdogs/blob/master/Screen.png?raw=true)
 
 This project has been presented at the Toulouse Swift Meetup the 06/02/2018. [The slides of the presentation are in the repository.](https://github.com/liberty-rider/CatVsDog/blob/master/CoreML%20Meetup%20iOS%20by%20Liberty%20Rider.pdf)
+[The app CatVsDog is available on the AppStore if you want to try it immediately :)](https://itunes.apple.com/fr/app/catvsdog-by-liberty-rider/id1341306528?mt=8)
 
 
 ## Python project - create, train and export the model
